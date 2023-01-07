@@ -38,7 +38,7 @@ $(document).ready(function() {
 </div>
 
 <div class="ui input">
-  <input name="dividend_yield" type="text" placeholder="Dividend Yield" value="{{ dividend_yield or '' }}">
+  <input name="dividend_yield" type="text" placeholder="Dividend Yield" value="{{ dividend_yield or '' }}"%>
 </div>
 
 <div class="ui checkbox">
@@ -77,7 +77,7 @@ $(document).ready(function() {
       <td>{{ stock.price }}</td>
       <td>{{ stock.forward_pe }}</td>
       <td>{{ stock.forward_eps }}</td>
-      <td>{{ stock.dividend_yield }}</td>
+      <td>{{ stock.dividend_yield }}%</td>
       <td>{{ stock.ma50 }}</td>
       <td>{{ stock.ma200 }}</td>
     </tr>
